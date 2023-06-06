@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visitor Management System</title>
+    
+</head>
+
+<body>
+    <header>
+        <h1 class="animated">Visitor Management System</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('client') }}" class="button">Go to Visitor Form</a></li>
+        
+            <li><a href="{{ url_for('admin') }}" class="button">Admin Login</a></li>
+        </ul>
+    </nav>
+    <section>
+        <div class="dummy-info">
+            <h2>Welcome to our Visitor Management System</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquet nulla eu nulla commodo congue. Sed
+                hendrerit nulla sit amet facilisis consequat. Ut et malesuada ex, non volutpat nulla. Proin aliquet
+                lorem
+                quis arcu rutrum, vitae aliquet mi pellentesque.</p>
+            <p>Sed dictum justo id velit tristique, sit amet vulputate lorem laoreet. In quis fringilla tortor. Donec
+                elementum lectus at sem malesuada, id consequat neque fringilla. Sed id mi vel est finibus malesuada.
+                Curabitur eu convallis lorem.</p>
+        </div>
+    </section>
+    <footer>
+        <p>Made with ❤️ by Triyar | &copy; 2023</p>
+    </footer>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+        
+        header {
+            background-color: #333;
+            padding: 20px;
+            color: #fff;
+            text-align: center;
+        }
+        
+        nav {
+            background-color: #666;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        
+        .button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        
+        section {
+            margin: 20px;
+        }
+        
+        .dummy-info {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        footer {
+            background-color: #333;
+            padding: 10px;
+            color: #fff;
+            text-align: center;
+        }
+        
+        .animated {
+            animation: fadeIn 1s ease-in-out;
+        }
+        
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>        
+</body>
+
+</html>
